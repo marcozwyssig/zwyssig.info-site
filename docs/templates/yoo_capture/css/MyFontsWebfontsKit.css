@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2827049, 2014-06-11T09:43:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Futura Book by Bitstream
+ * URL: http://www.myfonts.com/fonts/bitstream/futura/book/
+ * Copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2827049
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("http://hello.myfonts.net/count/2b2329");
+
+  
+@font-face {font-family: 'FuturaBT-Book';src: url('webfonts/2B2329_0_0.eot');src: url('webfonts/2B2329_0_0d41d.eot?#iefix') format('embedded-opentype'),url('webfonts/2B2329_0_0.woff') format('woff'),url('webfonts/2B2329_0_0.ttf') format('truetype');}
+ 
