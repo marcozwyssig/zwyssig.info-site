@@ -6,11 +6,11 @@ hero:
 pillars:
   - title: "Training & Consulting"
     text: "Do you want to increase the productivity of your software development?"
-    link: "/angebot"
+    link: "/angebot/"
   - title: "Staff Augmentation"
     text: "Are you looking for skilled specialists to bridge staffing gaps?"
-    link: "/angebot"
+    link: "/angebot/"
   - title: "Development"
     text: "Are you looking for software that simply does what you need?"
-    link: "/kompetenzen"
+    link: "/kompetenzen/"
 ---

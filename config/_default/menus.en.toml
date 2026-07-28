@@ -4,13 +4,13 @@ pageRef = "/"
 weight = 1
 [[main]]
 name = "Services"
-pageRef = "/angebot"
+pageRef = "/angebot/"
 weight = 2
 [[main]]
 name = "Expertise"
-pageRef = "/kompetenzen"
+pageRef = "/kompetenzen/"
 weight = 3
 [[main]]
 name = "Company"
-pageRef = "/firma"
+pageRef = "/firma/"
 weight = 4
