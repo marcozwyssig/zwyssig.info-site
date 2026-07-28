@@ -1,0 +1,11 @@
+{{ $c := .Site.Params.company }}
+<aside class="contact-card">
+  <h2>{{ i18n "contact" }}</h2>
+  <address>
+    <strong>{{ $c.name }}</strong><br>
+    {{ $c.street }}<br>
+    {{ $c.city }}<br>
+    <a href="tel:{{ $c.phoneHref }}">{{ $c.phone }}</a><br>
+    <a href="mailto:{{ $c.email }}">{{ $c.email }}</a>
+  </address>
+</aside>
