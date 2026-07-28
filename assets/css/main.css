@@ -234,6 +234,72 @@ small, .meta{ color:var(--color-muted); font-size:.875rem; }
 .page h1{ margin-bottom:var(--space-4); }
 .page .wrap > * + *{ margin-top:var(--space-3); }
 
+/* ---- 8b. Home: hero ------------------------------------------------------------ */
+.hero{
+  padding-block:var(--space-7) var(--space-6);
+  background:linear-gradient(180deg, var(--color-surface), var(--color-bg) 65%);
+  border-bottom:1px solid var(--color-border);
+}
+.hero h1{ max-width:18ch; }
+.hero-sub{
+  max-width:52ch;
+  font-size:1.15rem;
+  color:var(--color-muted);
+  margin-bottom:var(--space-4);
+}
+.hero-tagline{
+  display:inline-flex; align-items:center; gap:.6em;
+  font-size:.85rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--color-accent);
+  margin-bottom:var(--space-5);
+}
+.hero-tagline::before{
+  content:""; width:1.4em; height:2px; background:currentColor; display:inline-block; flex:none;
+}
+
+/* ---- 8c. Home: pillars ---------------------------------------------------------- */
+.pillars-section{ padding-block:var(--space-7); }
+.pillars-section h2{ max-width:32ch; margin-bottom:var(--space-5); }
+.pillars{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:var(--space-4);
+}
+.card{
+  display:flex;
+  flex-direction:column;
+  background:var(--color-surface);
+  border:1px solid var(--color-border);
+  border-radius:var(--radius);
+  padding:var(--space-4);
+  color:var(--color-fg);
+  text-decoration:none;
+  box-shadow:var(--shadow-sm);
+  transition:transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.card:hover, .card:focus-visible{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--color-accent);
+}
+.card h3{ margin-bottom:var(--space-2); }
+.card p{
+  color:var(--color-muted);
+  margin-bottom:var(--space-3);
+  flex-grow:1;
+}
+.card-cta{
+  display:inline-flex; align-items:center;
+  font-size:.9rem; font-weight:600;
+  color:var(--color-accent);
+  margin-top:auto;
+  transition:transform var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.card:hover .card-cta, .card:focus-visible .card-cta{
+  transform:translateX(4px);
+  color:var(--color-accent-strong);
+}
+
 /* ---- 9. Footer --------------------------------------------------------------- */
 .site-footer{
   border-top:1px solid var(--color-border);
