@@ -36,7 +36,7 @@
 - `layouts/partials/head.html`, `header.html`, `footer.html`, `language-switcher.html`.
 - `assets/css/main.css` — hand-written styles + design tokens.
 - `assets/js/site.js` — mobile nav toggle.
-- `content/_index.md`, `angebot.md`, `kompetenzen.md`, `firma.md`, `impressum.md` (+ `content/en/` mirror).
+- `content/de/_index.md`, `angebot.md`, `kompetenzen.md`, `firma.md`, `impressum.md` (+ `content/en/` mirror).
 - `static/CNAME`, `static/images/` (logo + curated photos).
 - `docs/` — build output (committed in final task only).
 
@@ -98,6 +98,7 @@ home = ["HTML"]
 languageName = "Deutsch"
 languageCode = "de-CH"
 weight = 1
+contentDir = "content/de"
 title = "Zwyssig Informatik GmbH"
 
 [en]
@@ -107,6 +108,8 @@ weight = 2
 contentDir = "content/en"
 title = "Zwyssig Informatik GmbH"
 ```
+
+> NOTE: each language has its OWN `contentDir` (`content/de`, `content/en`) so neither language's folder is picked up as a section of the other. German content lives under `content/de/`, English under `content/en/`.
 
 - [ ] **Step 5: Create `config/_default/params.toml`**
 
@@ -162,7 +165,7 @@ weight = 4
 
 - [ ] **Step 7: Add a minimal placeholder home so the build has output**
 
-Create `content/_index.md`:
+Create `content/de/_index.md`:
 ```markdown
 ---
 title: "Home"
@@ -419,7 +422,7 @@ git commit -m "feat: add de/en i18n string tables"
 
 **Files:**
 - Create: `layouts/index.html`.
-- Modify: `content/_index.md`, `content/en/_index.md` (front-matter params for hero + pillars).
+- Modify: `content/de/_index.md`, `content/en/_index.md` (front-matter params for hero + pillars).
 - Add CSS: extend `assets/css/main.css` with `.hero`, `.pillars`, `.card`, `.cta` styles.
 
 **Content source:** old home text (scraped) — hero line "Die Welt durch Software sehen", tagline "Ihr Partner für .NET Softwareentwicklung", subline "Mit agilen Methoden und Microsoft Technologien unterstützen wir unsere Kunden für eine effiziente und effektive Softwareentwicklung", three pillars: **Schulung und Beratung** ("Möchten Sie die Produktivität der Software-Entwicklung steigern?"), **Unterstützung** ("Suchen Sie kompetente Fachkräfte für die Überbrückung von Personalengpässen?"), **Entwicklung** ("Sie sind auf der Suche nach Software, die einfach das macht was Sie brauchen?").
@@ -428,7 +431,7 @@ git commit -m "feat: add de/en i18n string tables"
 - Consumes: front-matter keys `hero.title`, `hero.subtitle`, and `pillars` list (`title`, `text`, `link`).
 - Produces: home page at `/` and `/en/`.
 
-- [ ] **Step 1: Write `content/_index.md` (DE)**
+- [ ] **Step 1: Write `content/de/_index.md` (DE)**
 
 ```markdown
 ---
@@ -522,7 +525,7 @@ git commit -m "feat: home page hero, pillar cards, and CTA (de/en)"
 ### Task 5: Angebot page
 
 **Files:**
-- Create: `content/angebot.md`, `content/en/angebot.md`.
+- Create: `content/de/angebot.md`, `content/en/angebot.md`.
 - Add CSS: `.sections` / `details.section` (or `.section-block`) styling in `main.css`.
 
 **Content source (migrate faithfully):** `git show HEAD~4:static/angebot.html` is gone after Task 1; instead migrate from the pre-Task-1 copy. The full German text was extracted during brainstorming and is reproduced here so the executor needs no external file:
@@ -549,7 +552,7 @@ Sections (each becomes a `## heading` + body; use native `<details>`/`<summary>`
 Run: `git show cdc70bd:static/angebot.html | sed 's/<[^>]*>//g' | grep -v '^[[:space:]]*$' > /tmp/angebot-de.txt`
 Use this as the source of truth for the German copy.
 
-- [ ] **Step 2: Write `content/angebot.md` (DE)**
+- [ ] **Step 2: Write `content/de/angebot.md` (DE)**
 
 Front matter + faithful migration of the intro, all section headings (`## Unterstützung`, `## Beratung und Schulung`, with `### Softwareentwicklungsprozess` etc.), paragraphs, and bullet lists from `/tmp/angebot-de.txt`.
 ```markdown
@@ -583,7 +586,7 @@ git commit -m "feat: Angebot page content (de/en)"
 ### Task 6: Kompetenzen page
 
 **Files:**
-- Create: `content/kompetenzen.md`, `content/en/kompetenzen.md`.
+- Create: `content/de/kompetenzen.md`, `content/en/kompetenzen.md`.
 
 **Content source:** `git show cdc70bd:static/kompetenzen.html`. Intro: "Erfahren Sie mehr über die Leistungen und Kompetenzen der Zwyssig Informatik GmbH und überzeugen Sie sich von unseren Kompetenzen in der Software Entwicklung." Sections: **Lösungen** (Intelligence Lifecycle / BigData paragraph + list: Ablegen von grossen Datenmengen; Erkennen von Mustern; Verarbeiten und Aggregieren…; Zeit- und geoorientierte Analysen…) and **Software Praktiken** (Continuous Integration und Delivery; Testautomation + benefits list; Modellgetriebene Softwareentwicklung (MDSD) + benefits list; Parallele Programmierung).
 
@@ -594,7 +597,7 @@ git commit -m "feat: Angebot page content (de/en)"
 
 Run: `git show cdc70bd:static/kompetenzen.html | sed 's/<[^>]*>//g' | grep -v '^[[:space:]]*$' > /tmp/kompetenzen-de.txt`
 
-- [ ] **Step 2: Write `content/kompetenzen.md` (DE)** — faithful migration.
+- [ ] **Step 2: Write `content/de/kompetenzen.md` (DE)** — faithful migration.
 ```markdown
 ---
 title: "Kompetenzen"
@@ -623,7 +626,7 @@ git commit -m "feat: Kompetenzen page content (de/en)"
 ### Task 7: Firma page (with contact block)
 
 **Files:**
-- Create: `content/firma.md`, `content/en/firma.md`.
+- Create: `content/de/firma.md`, `content/en/firma.md`.
 - Create: `layouts/_default/single.html` already exists; add a contact partial `layouts/partials/contact-card.html`.
 - Add CSS: `.contact-card` styling.
 
@@ -660,7 +663,7 @@ Create `layouts/_default/firma.html` (Hugo picks it up when page has `layout: fi
 {{ partial "contact-card.html" . }}
 ```
 
-- [ ] **Step 4: Write `content/firma.md` (DE)** — Über uns + Partner paragraphs, then `{{< contact >}}` shortcode for the Kontakt block.
+- [ ] **Step 4: Write `content/de/firma.md` (DE)** — Über uns + Partner paragraphs, then `{{< contact >}}` shortcode for the Kontakt block.
 ```markdown
 ---
 title: "Firma"
@@ -691,7 +694,7 @@ git commit -m "feat: Firma page with contact card (de/en)"
 ### Task 8: Impressum page
 
 **Files:**
-- Create: `content/impressum.md`, `content/en/impressum.md`.
+- Create: `content/de/impressum.md`, `content/en/impressum.md`.
 
 **Content source:** `git show cdc70bd:static/impressum.html`. Sections (migrate verbatim, German): Kontaktadresse, Handelsregistereintrag (Nummer CHE-112.480.156, Handelsregisteramt Zürich), Mehrwertsteuernummer, Haftungsausschluss, Haftung für Links, Urheberrechte, Datenschutzerklärung für die Nutzung von Google Analytics (full text).
 
@@ -704,7 +707,7 @@ git commit -m "feat: Firma page with contact card (de/en)"
 
 Run: `git show cdc70bd:static/impressum.html | sed 's/<[^>]*>//g' | grep -v '^[[:space:]]*$' > /tmp/impressum-de.txt`
 
-- [ ] **Step 2: Write `content/impressum.md` (DE)** — verbatim migration.
+- [ ] **Step 2: Write `content/de/impressum.md` (DE)** — verbatim migration.
 ```markdown
 ---
 title: "Impressum"
