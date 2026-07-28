@@ -24,11 +24,13 @@ Sie übernehmen ein breites Spektrum an Tätigkeiten innerhalb des agilen Entwic
 
 Eine effiziente und effektive Softwareentwicklung bedingt ein fundiertes Wissen der Methoden und der Technologien. Zwyssig Informatik GmbH bietet Beratung und Schulung für ihr .NET Entwicklungsteams an. Erzielen Sie so mehr nachhaltige Produktivität, zufriedenere Mitarbeiter, eine bessere Qualität Ihrer Produkte und Dienstleistungen und weniger Ausfallzeiten.
 
+### Beratung
+
 ### Softwareentwicklungsprozess
 
 Der Softwareentwicklungsprozess beeinflusst massgeblich Qualität, Termine und Kosten bei der Entwicklung komplexer Software-Produkte und Systemen. Als Softwaredienstleister kennen wir die Chancen und Risiken der verschiedenen Vorgehensmodelle und haben wertvolle praktische Erfahrungen in unterschiedlichen Projekten sammeln können.
 
-Wir beraten Sie gerne zum Thema Softwareentwicklungsprozess und unterstützen Sie bei folgenden möglichen Aufgabenstellungen:
+Wir beraten Sie gerne um das Thema Softwareentwicklungsprozess und unterstützen Sie bei folgenden möglichen Aufgabenstellungen:
 
 - Beratung bei der Evaluation des Entwicklungsprozesses (HERMES, IEEE) und Entwicklungsmethoden (Scrum, XP, Kanban)
 - Beratung bei der Wahl der Entwicklungswerkzeuge

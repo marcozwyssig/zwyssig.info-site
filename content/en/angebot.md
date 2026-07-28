@@ -24,6 +24,8 @@ They take on a broad spectrum of activities within the agile development process
 
 Efficient and effective software development requires a solid understanding of methods and technologies. Zwyssig Informatik GmbH offers consulting and training for your .NET development teams. This helps you achieve more sustainable productivity, more satisfied employees, better quality in your products and services, and less downtime.
 
+### Consulting
+
 ### Software Development Process
 
 The software development process has a decisive influence on quality, deadlines and costs when developing complex software products and systems. As a software service provider, we know the opportunities and risks of the various process models and have gathered valuable practical experience across different projects.
