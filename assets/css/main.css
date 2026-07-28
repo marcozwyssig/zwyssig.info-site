@@ -233,6 +233,11 @@ small, .meta{ color:var(--color-muted); font-size:.875rem; }
 }
 .page h1{ margin-bottom:var(--space-4); }
 .page .wrap > * + *{ margin-top:var(--space-3); }
+.page .wrap > h2{ margin-top:var(--space-6); padding-top:var(--space-5); border-top:1px solid var(--color-border); }
+.page .wrap > h2:first-of-type{ margin-top:var(--space-3); padding-top:0; border-top:none; }
+.page .wrap > h3{ margin-top:var(--space-5); }
+.page .wrap > ul{ margin-top:var(--space-2); }
+.page ul li + li{ margin-top:.35em; }
 
 /* ---- 8b. Home: hero ------------------------------------------------------------ */
 .hero{
