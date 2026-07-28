@@ -1,0 +1,8 @@
+<nav class="lang-switch" aria-label="Language">
+  {{ range .AllTranslations }}
+    <a href="{{ .RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} aria-current="true"{{ end }}>{{ .Language.Lang | upper }}</a>
+  {{ else }}
+    {{/* no translations: link to language homes */}}
+    {{ range .Sites }}<a href="{{ .Home.RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} aria-current="true"{{ end }}>{{ .Language.Lang | upper }}</a>{{ end }}
+  {{ end }}
+</nav>

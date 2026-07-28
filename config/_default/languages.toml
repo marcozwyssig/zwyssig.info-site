@@ -1,13 +1,13 @@
 [de]
-languageName = "Deutsch"
-languageCode = "de-CH"
+label = "Deutsch"
+locale = "de-CH"
 weight = 1
 contentDir = "content/de"
 title = "Zwyssig Informatik GmbH"
 
 [en]
-languageName = "English"
-languageCode = "en"
+label = "English"
+locale = "en"
 weight = 2
 contentDir = "content/en"
 title = "Zwyssig Informatik GmbH"

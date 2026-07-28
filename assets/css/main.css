@@ -1,0 +1,309 @@
+/* ==========================================================================
+   Zwyssig Informatik GmbH — design tokens & base theme shell
+   Palette: slate / blue, "precision" accent motif (thin rule + tick marks)
+   System font stack only. Light + dark via prefers-color-scheme.
+   ========================================================================== */
+
+/* ---- 1. Design tokens ---------------------------------------------------- */
+:root{
+  /* color */
+  --color-bg:#ffffff;
+  --color-fg:#1a2230;
+  --color-muted:#5b6472;
+  --color-accent:#2b5ce6;
+  --color-accent-strong:#1e46bd;
+  --color-accent-contrast:#ffffff;
+  --color-surface:#f4f6fb;
+  --color-border:#dde3ee;
+
+  /* layout */
+  --maxw:1080px;
+  --radius:12px;
+  --radius-sm:6px;
+
+  /* spacing scale */
+  --space-1:.25rem;
+  --space-2:.5rem;
+  --space-3:1rem;
+  --space-4:1.5rem;
+  --space-5:2.5rem;
+  --space-6:4rem;
+  --space-7:6rem;
+
+  /* motion */
+  --ease:cubic-bezier(.4,0,.2,1);
+  --dur:180ms;
+
+  /* elevation */
+  --shadow-sm:0 1px 2px rgba(20,28,46,.06), 0 1px 1px rgba(20,28,46,.04);
+  --shadow-md:0 8px 24px rgba(20,28,46,.10);
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --color-bg:#0f141c;
+    --color-fg:#e6eaf2;
+    --color-muted:#9aa4b2;
+    --color-accent:#6d8bff;
+    --color-accent-strong:#8ba1ff;
+    --color-accent-contrast:#0f141c;
+    --color-surface:#161d28;
+    --color-border:#262f3e;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.35), 0 1px 1px rgba(0,0,0,.2);
+    --shadow-md:0 8px 24px rgba(0,0,0,.45);
+  }
+}
+
+/* ---- 2. Reset & base ------------------------------------------------------ */
+*, *::before, *::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+body{
+  margin:0;
+  background:var(--color-bg);
+  color:var(--color-fg);
+  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{ max-width:100%; display:block; }
+main{ display:block; }
+
+/* thin precision rule along the very top of the page — signature detail */
+body{ border-top:3px solid var(--color-accent); }
+
+/* ---- 3. Typography --------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6{
+  margin:0 0 var(--space-3);
+  font-weight:700;
+  letter-spacing:-.01em;
+  line-height:1.2;
+  color:var(--color-fg);
+}
+h1{ font-size:clamp(2.25rem, 1.7rem + 2.2vw, 3.5rem); letter-spacing:-.02em; }
+h2{ font-size:clamp(1.6rem, 1.35rem + 1.1vw, 2.35rem); }
+h3{ font-size:clamp(1.25rem, 1.1rem + .6vw, 1.6rem); }
+p{ margin:0 0 var(--space-3); color:var(--color-fg); }
+p:last-child{ margin-bottom:0; }
+.lede{ font-size:1.15rem; color:var(--color-muted); }
+
+a{ color:var(--color-accent); text-decoration-thickness:1px; text-underline-offset:.15em; }
+a:hover{ color:var(--color-accent-strong); }
+
+ul, ol{ padding-left:1.25em; }
+small, .meta{ color:var(--color-muted); font-size:.875rem; }
+
+/* eyebrow / label — used with a small accent tick, fits the "precision" motif */
+.eyebrow{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:.8rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--color-accent);
+}
+.eyebrow::before{
+  content:""; width:1.1em; height:2px; background:currentColor; display:inline-block;
+}
+
+/* ---- 4. Layout ------------------------------------------------------------- */
+.wrap{
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:clamp(1rem, 4vw, 2rem);
+}
+
+/* ---- 5. Header & navigation ------------------------------------------------ */
+.site-header{
+  position:sticky; top:0; z-index:50;
+  background:color-mix(in srgb, var(--color-bg) 92%, transparent);
+  backdrop-filter:saturate(140%) blur(8px);
+  -webkit-backdrop-filter:saturate(140%) blur(8px);
+  border-bottom:1px solid var(--color-border);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:var(--space-4);
+  min-height:72px;
+}
+.brand{
+  display:flex; align-items:center;
+  margin-right:auto;
+  text-decoration:none;
+}
+.brand img{ height:40px; width:auto; }
+
+.site-nav ul{
+  display:flex;
+  align-items:center;
+  gap:var(--space-4);
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.site-nav a{
+  position:relative;
+  display:inline-block;
+  padding:.4em 0;
+  color:var(--color-fg);
+  font-weight:500;
+  text-decoration:none;
+}
+.site-nav a::after{
+  content:"";
+  position:absolute; left:0; right:100%; bottom:0;
+  height:2px;
+  background:var(--color-accent);
+  transition:right var(--dur) var(--ease);
+}
+.site-nav a:hover::after,
+.site-nav a[aria-current="page"]::after{
+  right:0;
+}
+.site-nav a[aria-current="page"]{ color:var(--color-accent); }
+
+.nav-toggle{
+  display:none;
+  appearance:none;
+  border:1px solid var(--color-border);
+  background:var(--color-surface);
+  color:var(--color-fg);
+  border-radius:var(--radius-sm);
+  width:44px; height:44px;
+  font-size:1.15rem;
+  line-height:1;
+  cursor:pointer;
+}
+.nav-toggle:hover{ border-color:var(--color-accent); }
+
+/* ---- 6. Language switcher --------------------------------------------------- */
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap:var(--space-2);
+  margin-left:var(--space-2);
+  padding-left:var(--space-3);
+  border-left:1px solid var(--color-border);
+}
+.lang-switch a{
+  color:var(--color-muted);
+  text-decoration:none;
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.04em;
+  padding:.3em .5em;
+  border-radius:var(--radius-sm);
+}
+.lang-switch a:hover{
+  color:var(--color-fg);
+  background:var(--color-surface);
+}
+.lang-switch a[aria-current="true"]{
+  color:var(--color-accent-contrast);
+  background:var(--color-accent);
+}
+
+/* ---- 7. Buttons (shared primitive for later CTAs) --------------------------- */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5em;
+  padding:.75em 1.4em;
+  border-radius:999px;
+  border:1px solid transparent;
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+  transition:background var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.btn:active{ transform:translateY(1px); }
+.btn-primary{
+  background:var(--color-accent);
+  color:var(--color-accent-contrast);
+}
+.btn-primary:hover{ background:var(--color-accent-strong); color:var(--color-accent-contrast); }
+.btn-secondary{
+  background:transparent;
+  color:var(--color-fg);
+  border-color:var(--color-border);
+}
+.btn-secondary:hover{ border-color:var(--color-accent); color:var(--color-accent); }
+
+/* ---- 8. Page / article content (single.html) -------------------------------- */
+.page{
+  padding-block:var(--space-6);
+}
+.page h1{ margin-bottom:var(--space-4); }
+.page .wrap > * + *{ margin-top:var(--space-3); }
+
+/* ---- 9. Footer --------------------------------------------------------------- */
+.site-footer{
+  border-top:1px solid var(--color-border);
+  background:var(--color-surface);
+  margin-top:var(--space-7);
+}
+.footer-inner{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--space-2);
+  padding-block:var(--space-4);
+  color:var(--color-muted);
+  font-size:.875rem;
+}
+.footer-inner p{ margin:0; color:inherit; }
+.footer-inner a{ color:var(--color-muted); text-decoration:underline; text-underline-offset:.15em; }
+.footer-inner a:hover{ color:var(--color-accent); }
+
+/* ---- 10. Focus states --------------------------------------------------------- */
+a:focus-visible,
+button:focus-visible,
+.nav-toggle:focus-visible{
+  outline:2px solid var(--color-accent);
+  outline-offset:2px;
+  border-radius:var(--radius-sm);
+}
+
+/* ---- 11. Reduced motion -------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+
+/* ---- 12. Responsive: mobile nav ------------------------------------------------ */
+@media (max-width:720px){
+  .nav-toggle{ display:inline-flex; align-items:center; justify-content:center; order:3; }
+
+  .header-inner{ flex-wrap:wrap; }
+
+  .site-nav{
+    order:5;
+    flex-basis:100%;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height var(--dur) var(--ease);
+  }
+  .site-nav.open{ max-height:60vh; }
+  .site-nav ul{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+    padding-block:var(--space-2);
+  }
+  .site-nav li{ width:100%; }
+  .site-nav a{ display:block; padding:.75em 0; }
+  .site-nav a::after{ display:none; }
+
+  .lang-switch{
+    order:4;
+    margin-left:auto;
+    padding-left:var(--space-2);
+  }
+}
+
+@media (min-width:721px){
+  .site-nav{ display:block !important; }
+}
