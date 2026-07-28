@@ -5,7 +5,7 @@ description: "Über die Zwyssig Informatik GmbH, gegründet 2005, und unsere Par
 
 ## Über uns
 
-Zwyssig Informatik GmbH wurde 2005 gegründet. In ihrem beinahe 10-jährigen Bestehen hat sie sich einen hervorragenden Ruf aufgebaut durch konsequente Ausrichtung auf die Kundenbedürfnisse verbunden mit stetigem Wissensaufbau und -transfer. Wir verstehen unsere Rolle als Berater und Entwickler in einem ganzheitlichen Kontext - wir bieten integrative Lösungen an, welche auf der betriebswirtschaftlichen wie auch auf der technologischen Ebene einen nachhaltigen Mehrwert schaffen. Der korrekten Identifikation der Prozessbedürfnisse und der intensiven Projektbegleitung, von der Modellierung bis zur Qualitätssicherung, kommen in diesem Zusammenhang grosse Bedeutung zu.
+Zwyssig Informatik GmbH wurde 2005 gegründet. Seit ihrer Gründung hat sie sich einen hervorragenden Ruf aufgebaut durch konsequente Ausrichtung auf die Kundenbedürfnisse verbunden mit stetigem Wissensaufbau und -transfer. Wir verstehen unsere Rolle als Berater und Entwickler in einem ganzheitlichen Kontext - wir bieten integrative Lösungen an, welche auf der betriebswirtschaftlichen wie auch auf der technologischen Ebene einen nachhaltigen Mehrwert schaffen. Der korrekten Identifikation der Prozessbedürfnisse und der intensiven Projektbegleitung, von der Modellierung bis zur Qualitätssicherung, kommen in diesem Zusammenhang grosse Bedeutung zu.
 
 Wir freuen uns über die wachsende Anzahl an zufriedenen Kunden und hoffen auch in Zukunft durch exzellente Softwarelösungen betrieblichen Erfolg nachhaltig zu sichern.
 
