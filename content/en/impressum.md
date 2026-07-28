@@ -8,8 +8,8 @@ The following legal notice is authoritative in German.
 ## Contact address
 
 Zwyssig Informatik GmbH<br>
-Seebüelstrasse 38<br>
-CH-8185 Winkel
+Kirchweg 45a<br>
+CH-8196 Wil ZH
 
 ## Commercial register entry
 

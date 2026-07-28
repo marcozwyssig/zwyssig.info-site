@@ -6,8 +6,8 @@ description: "Impressum der Zwyssig Informatik GmbH."
 ## Kontaktadresse
 
 Zwyssig Informatik GmbH<br>
-Seebüelstrasse 38<br>
-CH-8185 Winkel
+Kirchweg 45a<br>
+CH-8196 Wil ZH
 
 ## Handelsregistereintrag
 

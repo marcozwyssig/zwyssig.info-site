@@ -129,6 +129,11 @@ small, .meta{ color:var(--color-muted); font-size:.875rem; }
   text-decoration:none;
 }
 .brand img{ height:40px; width:auto; }
+/* Dark mode: the logo wordmark is near-black, so lift it to light while
+   keeping the red burst reddish (invert flips lightness; hue-rotate restores hue). */
+@media (prefers-color-scheme:dark){
+  .brand img{ filter:invert(1) hue-rotate(180deg); }
+}
 
 .site-nav ul{
   display:flex;
