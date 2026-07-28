@@ -1,0 +1,16 @@
+[[main]]
+name = "Home"
+pageRef = "/"
+weight = 1
+[[main]]
+name = "Services"
+pageRef = "/angebot"
+weight = 2
+[[main]]
+name = "Expertise"
+pageRef = "/kompetenzen"
+weight = 3
+[[main]]
+name = "Company"
+pageRef = "/firma"
+weight = 4

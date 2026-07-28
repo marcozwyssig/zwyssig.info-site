@@ -1,0 +1,13 @@
+baseURL = "https://www.zwyssig.info/"
+title = "Zwyssig Informatik GmbH"
+publishDir = "docs"
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+enableGitInfo = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputs]
+home = ["HTML"]

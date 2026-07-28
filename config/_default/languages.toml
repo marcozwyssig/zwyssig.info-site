@@ -1,0 +1,13 @@
+[de]
+languageName = "Deutsch"
+languageCode = "de-CH"
+weight = 1
+contentDir = "content/de"
+title = "Zwyssig Informatik GmbH"
+
+[en]
+languageName = "English"
+languageCode = "en"
+weight = 2
+contentDir = "content/en"
+title = "Zwyssig Informatik GmbH"
