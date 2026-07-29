@@ -2,21 +2,31 @@
 <section class="hero">
   <div class="wrap">
     <h1>{{ .Params.hero.title }}</h1>
-    <p class="hero-sub">{{ .Params.hero.subtitle }}</p>
-    <p class="hero-tagline">{{ i18n "hero_tagline" }}</p>
+    <p class="hero-sub">{{ .Params.hero.tagline }}</p>
     <a class="btn btn-primary" href="{{ "/firma/" | relLangURL }}">{{ i18n "cta_contact" }}</a>
   </div>
 </section>
+
 <section class="pillars-section">
   <div class="wrap">
-    <h2>{{ i18n "pillars_title" }}</h2>
+    {{ with .Params.accelHeading }}<h2>{{ . }}</h2>{{ end }}
     <div class="pillars">
-      {{ range .Params.pillars }}
-      <a class="card" href="{{ .link | relLangURL }}">
+      {{ range .Params.accelerator }}
+      <div class="card card--static">
         <h3>{{ .title }}</h3>
         <p>{{ .text }}</p>
-        <span class="card-cta">{{ i18n "cta_learn_more" }} →</span>
-      </a>
+      </div>
+      {{ end }}
+    </div>
+    {{ with .Params.valueLine }}<p class="value-line">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="sections-nav">
+  <div class="wrap">
+    <div class="section-links">
+      {{ range .Params.sections }}
+      <a class="section-link" href="{{ .link | relLangURL }}">{{ .title }}</a>
       {{ end }}
     </div>
   </div>

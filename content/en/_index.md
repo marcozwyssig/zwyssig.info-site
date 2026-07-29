@@ -1,16 +1,24 @@
 ---
 title: "Home"
 hero:
-  title: "Seeing the world through software"
-  subtitle: "With agile methods and Microsoft technologies we help our clients develop software efficiently and effectively."
-pillars:
-  - title: "Training & Consulting"
-    text: "Do you want to increase the productivity of your software development?"
+  title: "Your partner for system and software engineering"
+  tagline: "AI sets the pace, models and automation ensure consistency, experience shows the direction."
+accelHeading: "Your edge"
+accelerator:
+  - title: "Speed through AI"
+    text: "Modern AI amplifies our development power – faster from idea to solution."
+  - title: "Consistency through models & automation"
+    text: "Model-driven development and automation deliver consistent quality and lasting maintainability."
+  - title: "Direction through experience"
+    text: "Deep knowledge and years of experience point development in the right direction."
+valueLine: "Reach your goals faster, more cost-effectively, and with confidence."
+sections:
+  - title: "Services"
     link: "/angebot/"
-  - title: "Staff Augmentation"
-    text: "Are you looking for skilled specialists to bridge staffing gaps?"
-    link: "/angebot/"
-  - title: "Development"
-    text: "Are you looking for software that simply does what you need?"
+  - title: "Solutions"
+    link: "/loesungen/"
+  - title: "Method"
+    link: "/methode/"
+  - title: "Expertise"
     link: "/kompetenzen/"
 ---

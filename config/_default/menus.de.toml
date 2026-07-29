@@ -7,10 +7,18 @@ name = "Angebot"
 pageRef = "/angebot/"
 weight = 2
 [[main]]
+name = "Lösungen"
+pageRef = "/loesungen/"
+weight = 3
+[[main]]
+name = "Methode"
+pageRef = "/methode/"
+weight = 4
+[[main]]
 name = "Kompetenzen"
 pageRef = "/kompetenzen/"
-weight = 3
+weight = 5
 [[main]]
 name = "Firma"
 pageRef = "/firma/"
-weight = 4
+weight = 6

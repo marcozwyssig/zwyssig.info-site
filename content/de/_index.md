@@ -1,16 +1,24 @@
 ---
 title: "Home"
 hero:
-  title: "Die Welt durch Software sehen"
-  subtitle: "Mit agilen Methoden und Microsoft Technologien unterstützen wir unsere Kunden für eine effiziente und effektive Softwareentwicklung."
-pillars:
-  - title: "Schulung und Beratung"
-    text: "Möchten Sie die Produktivität der Software-Entwicklung steigern?"
+  title: "Ihr Partner für System- und Software-Engineering"
+  tagline: "KI gibt das Tempo, Modelle und Automatisierung die Konsistenz, Erfahrung die Richtung."
+accelHeading: "Ihr Vorsprung"
+accelerator:
+  - title: "Tempo durch KI"
+    text: "Moderne KI verstärkt unsere Entwicklungsleistung – schneller von der Idee zur Lösung."
+  - title: "Konsistenz durch Modelle & Automatisierung"
+    text: "Modellgetriebene Entwicklung und Automatisierung sichern durchgängige Qualität und langfristige Wartbarkeit."
+  - title: "Richtung durch Erfahrung"
+    text: "Fundiertes Wissen und langjährige Erfahrung geben die richtige Entwicklungsrichtung vor."
+valueLine: "So erreichen Sie Ihre Ziele schneller, wirtschaftlicher und zielsicher."
+sections:
+  - title: "Angebot"
     link: "/angebot/"
-  - title: "Unterstützung"
-    text: "Suchen Sie kompetente Fachkräfte für die Überbrückung von Personalengpässen?"
-    link: "/angebot/"
-  - title: "Entwicklung"
-    text: "Sie sind auf der Suche nach Software, die einfach das macht was Sie brauchen?"
+  - title: "Lösungen"
+    link: "/loesungen/"
+  - title: "Methode"
+    link: "/methode/"
+  - title: "Kompetenzen"
     link: "/kompetenzen/"
 ---
