@@ -52,6 +52,24 @@ Knowledge & Experience = direction — refined into marketing terms:
   - **Richtung durch Erfahrung** / *Direction through experience* — fundiertes
     Wissen und langjährige Erfahrung geben die richtige Entwicklungsrichtung vor.
 
+**Customer value (Mehrwert / outcome).** The three levers map 1:1 onto a concrete
+customer outcome — reaching goals faster, more cost-effectively, and with
+confidence:
+
+| Lever | Outcome |
+|---|---|
+| Tempo durch KI | **Schneller** ans Ziel |
+| Konsistenz durch Modelle & Automatisierung | **Wirtschaftlicher** (weniger Nacharbeit, nachhaltig wartbar) |
+| Richtung durch Erfahrung | **Zielsicher** (das Richtige, mit Zuversicht) |
+
+- **Value line (DE):** „So erreichen Sie Ihre Ziele schneller, wirtschaftlicher
+  und zielsicher." — short form: „Schneller. Wirtschaftlicher. Zielsicher."
+- **Value line (EN):** "Reach your goals faster, more cost-effectively, and with
+  confidence." — short form: "Faster. More efficient. On target."
+
+The Home accelerator section shows the three levers as cards and closes with the
+value line as the payoff.
+
 ## Navigation
 
 `Home · Angebot · Lösungen · Methode · Kompetenzen · Firma` (Impressum in footer).
@@ -111,9 +129,13 @@ Three disciplines, each a benefit paragraph + 2–4 proof points:
   content.)*
 - **Zertifizierungen** at the end — existing (CPSA, CSPO, CSM, CSD) unchanged
   (owner may add infra/security certs later).
-- The existing BigData/Intelligence-Lifecycle "Lösungen" section from the current
-  Kompetenzen page: fold its essence into Software/Automatisierung where it fits,
-  or drop if it no longer represents the offering (owner to confirm during review).
+- The existing BigData/Intelligence-Lifecycle section is **DROPPED for now**
+  (owner decision). Rationale: it is a *fachliche* (domain/subject-matter)
+  competence — "domains where large data volumes arise" — whereas the new
+  Kompetenzen page covers *technische* competences (Automation/Security/BC). A
+  future split into **Technische Kompetenzen** vs. **Fachliche Kompetenzen**
+  (BigData/large-data domains, etc.) is explicitly kept for later — out of scope
+  now.
 
 ### Firma / Impressum
 Unchanged.
@@ -151,13 +173,13 @@ serves `master /docs`; `CNAME` preserved.
 - No new certifications (owner didn't supply; existing kept).
 - Firma/Impressum content unchanged (address already corrected separately).
 
-## Open items for owner review
+## Owner decisions (resolved)
 
-1. Confirm the Software broadening (.NET/Java/C++/Python) and the generalized
-   "System- und Software-Engineering" positioning (away from Microsoft-only).
-2. Confirm what happens to the current Kompetenzen "BigData/Intelligence
-   Lifecycle" section (fold in vs. drop).
-3. Certifications remain as-is unless owner adds infra/security ones.
+1. Software broadening (.NET/Java/C++/Python) and generalized positioning —
+   **confirmed**.
+2. BigData/Intelligence Lifecycle — **dropped now**; future technische-vs-fachliche
+   split kept for later.
+3. Certifications — **remain as-is** (CPSA, CSPO, CSM, CSD).
 
 ## Testing / verification
 
