@@ -5,7 +5,7 @@
       <p>{{ i18n "cta_text" }}</p>
     </div>
     <div class="cta-actions">
-      <a class="btn btn-primary" href="mailto:{{ .Site.Params.company.email }}?{{ querify "subject" (i18n "cta_button") }}">{{ i18n "cta_button" }}</a>
+      <a class="btn btn-primary" href="{{ printf "mailto:%s?subject=%s" .Site.Params.company.email (i18n "cta_button" | urlquery) | safeURL }}">{{ i18n "cta_button" }}</a>
       <a class="btn btn-secondary" href="tel:{{ .Site.Params.company.phoneHref }}">{{ .Site.Params.company.phone }}</a>
     </div>
   </div>
