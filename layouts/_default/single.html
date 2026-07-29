@@ -7,10 +7,16 @@
   "firma" "/images/header/Kontakt.jpg"
   "impressum" "/images/header/Impressum.jpg" }}
 {{ $banner := .Params.banner | default (index $banners .File.ContentBaseName) }}
+{{ $figures := dict
+  "angebot" "/images/slides/Outsourcing.jpg"
+  "loesungen" "/images/slides/ApplikationsDesign.jpg"
+  "kompetenzen" "/images/slides/SoftwareDienstleister.jpg" }}
+{{ $figure := .Params.figure | default (index $figures .File.ContentBaseName) }}
 {{ with $banner }}<div class="page-banner" role="presentation" style="background-image:url('{{ . | relURL }}')"></div>{{ end }}
 <article class="page">
   <div class="wrap">
     <h1>{{ .Title }}</h1>
+    {{ with $figure }}<img class="page-figure" src="{{ . | relURL }}" alt="" loading="lazy" width="400" height="400">{{ end }}
     {{ .Content }}
   </div>
 </article>
