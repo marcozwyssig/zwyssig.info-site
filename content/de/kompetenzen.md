@@ -34,3 +34,12 @@ Ihr Betrieb muss laufen – auch im Störungsfall. Wir sorgen dafür, dass Ausf�
 - Disaster Recovery
 - Hochverfügbarkeit und Redundanz
 - Notfall- und Wiederanlaufkonzepte (RTO / RPO)
+
+## Brownfield-Migration
+
+Gewachsene Alt-Systeme sind teuer im Betrieb und schwer zu ändern. Wir überführen bestehende Umgebungen schrittweise und risikoarm in eine moderne, **automatisierte und wirtschaftliche Plattform** – ohne Big-Bang:
+
+- Analyse und Bewertung der bestehenden Landschaft
+- Schrittweise Migration statt riskanter Komplettumstellung
+- Automatisierung von Betrieb und Bereitstellung (IaC, CI/CD)
+- Tiefere Betriebskosten und bessere Wartbarkeit

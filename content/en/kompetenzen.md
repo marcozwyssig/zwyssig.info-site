@@ -34,3 +34,12 @@ Your operations must keep running – even when things go wrong. We keep failure
 - Disaster recovery
 - High availability and redundancy
 - Emergency and restart plans (RTO / RPO)
+
+## Brownfield migration
+
+Legacy systems that have grown over time are expensive to run and hard to change. We migrate existing environments step by step and with low risk into a modern, **automated and cost-efficient platform** – no big bang:
+
+- Analysis and assessment of the existing landscape
+- Incremental migration instead of a risky full switch-over
+- Automation of operations and deployment (IaC, CI/CD)
+- Lower operating costs and better maintainability
