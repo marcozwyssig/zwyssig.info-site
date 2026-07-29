@@ -16,7 +16,9 @@
 
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.svg">
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{ end }}
