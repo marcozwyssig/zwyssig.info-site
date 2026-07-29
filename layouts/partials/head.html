@@ -22,24 +22,17 @@
 {{ end }}
 
 {{ if .IsHome }}{{ $c := .Site.Params.company }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": {{ $c.name | jsonify }},
-  "url": {{ .Site.BaseURL | jsonify }},
-  "email": {{ $c.email | jsonify }},
-  "telephone": {{ $c.phone | jsonify }},
-  "image": {{ "/images/logo.png" | absURL | jsonify }},
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": {{ $c.street | jsonify }},
-    "postalCode": "8196",
-    "addressLocality": "Wil ZH",
-    "addressCountry": "CH"
-  },
-  "areaServed": "CH",
-  "description": {{ .Description | jsonify }}
-}
-</script>
+{{ $ld := dict
+  "@context" "https://schema.org"
+  "@type" "ProfessionalService"
+  "name" $c.name
+  "url" .Site.BaseURL
+  "email" $c.email
+  "telephone" $c.phone
+  "image" (absURL "/images/logo.png")
+  "address" (dict "@type" "PostalAddress" "streetAddress" $c.street "postalCode" "8196" "addressLocality" "Wil ZH" "addressCountry" "CH")
+  "areaServed" "CH"
+  "description" .Description
+}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
 {{ end }}
