@@ -22,6 +22,21 @@
   </div>
 </section>
 
+{{ with .Params.features }}
+<section class="features-section">
+  <div class="wrap">
+    <div class="features">
+      {{ range . }}
+      <a class="feature" href="{{ .link | relLangURL }}">
+        <img src="{{ .image | relURL }}" alt="" loading="lazy" width="400" height="400">
+        <span class="feature-title">{{ .title }} <span aria-hidden="true">→</span></span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <section class="sections-nav">
   <div class="wrap">
     <div class="section-links">

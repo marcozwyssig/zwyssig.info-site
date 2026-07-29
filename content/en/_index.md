@@ -21,4 +21,14 @@ sections:
     link: "/methode/"
   - title: "Expertise"
     link: "/kompetenzen/"
+features:
+  - image: "/images/slides/ApplikationsDesign.jpg"
+    title: "Tailored solutions"
+    link: "/loesungen/"
+  - image: "/images/slides/SoftwareDienstleister.jpg"
+    title: "Engineering & automation"
+    link: "/kompetenzen/"
+  - image: "/images/slides/Outsourcing.jpg"
+    title: "Partnership on equal terms"
+    link: "/angebot/"
 ---

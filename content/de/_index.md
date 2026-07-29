@@ -21,4 +21,14 @@ sections:
     link: "/methode/"
   - title: "Kompetenzen"
     link: "/kompetenzen/"
+features:
+  - image: "/images/slides/ApplikationsDesign.jpg"
+    title: "Passgenaue Lösungen"
+    link: "/loesungen/"
+  - image: "/images/slides/SoftwareDienstleister.jpg"
+    title: "Engineering & Automatisierung"
+    link: "/kompetenzen/"
+  - image: "/images/slides/Outsourcing.jpg"
+    title: "Partnerschaft auf Augenhöhe"
+    link: "/angebot/"
 ---

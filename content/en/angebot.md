@@ -1,38 +1,22 @@
 ---
 title: "Services"
-description: "Team reinforcement, consulting and training – how Zwyssig Informatik GmbH supports you across systems and software."
+description: "How we work together: as team reinforcement, as consulting from the outside, or with focused training."
 ---
 
-You decide how we work together: as **team reinforcement**, as **consulting**, or with focused **training** – across systems and software, over the entire lifecycle. As a small company with short decision paths, we are fast, flexible and personal.
+This is not about *what* we do – that is shown in [Solutions]({{< relref "loesungen.md" >}}), [Method]({{< relref "methode.md" >}}) and [Expertise]({{< relref "kompetenzen.md" >}}) – but *how* we work together. You choose the form that fits your situation: as **team reinforcement**, as **consulting** from the outside, or with focused **training**.
 
 ## Team reinforcement
 
-Staffing gaps slow down projects and day-to-day operations. We reinforce your team with skilled specialists – short- or long-term, in system and software engineering. We take on a broad range of tasks across the entire lifecycle:
-
-- Project management
-- Requirements and architecture
-- Development and integration
-- Quality assurance and testing
-- Commissioning and operations
+We work directly within your team – embedded in your processes, tools and routines, on-site or remote, short- or long-term. You lead, we deliver hands-on and close the gap exactly where it arises.
 
 ## Consulting
 
-Good results need the right methods, technologies and decisions. We advise independently and hands-on – from choosing the approach to the architecture:
-
-- Approach and process (Scrum, Kanban, HERMES, DevOps)
-- Architecture and technology choices
-- Requirements and value-based prioritisation (ROI)
-- Quality, automation and security
+We support you as an independent sparring partner from the outside: we analyse, assess and recommend. The decision stays with you – we bring an outside perspective, experience and concrete options for action.
 
 ## Training
 
-We share our knowledge – as training and coaching for your team, so that methods and practices take lasting hold:
-
-- **Clean Code & Refactoring** – write maintainable, readable code and fix code smells.
-- **Test automation** – apply unit, integration and UI tests effectively.
-- **Software architecture** – design and document architectures (UML, arc42).
-- **Agile methods & engineering practices** – develop more productively and with greater satisfaction.
+We pass on our knowledge in a focused way – in workshops, coaching and training, hands-on with your own topics and environments, so that methods and practices take lasting hold.
 
 ## Always in concert
 
-Whichever service you choose, we apply it to your domain – **[systems or software]({{< relref "loesungen.md" >}})** – with a focus on your topics **[automation, security and business continuity]({{< relref "kompetenzen.md" >}})** – delivered by our proven **[method]({{< relref "methode.md" >}})**.
+Whichever form you choose, we bring it into your domain – **[systems or software]({{< relref "loesungen.md" >}})** – with a focus on your topics **[automation, security and business continuity]({{< relref "kompetenzen.md" >}})** – delivered by our proven **[method]({{< relref "methode.md" >}})**. Whether as a service or fixed-price contract – whichever suits you best.
