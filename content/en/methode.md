@@ -3,7 +3,7 @@ title: "Method"
 description: "Our end-to-end approach: initiation, design, implementation and rollout."
 ---
 
-We deliver with an end-to-end, proven approach – from the first idea to live operation. Goals, timelines and costs stay in view throughout.
+Projects rarely fail because of technology – they fail because of the approach. That is why we deliver with an end-to-end, proven process – from the first idea to live operation – keeping goals, timelines and costs in view throughout.
 
 ## Initiation
 

@@ -5,8 +5,8 @@
       <p>{{ i18n "cta_text" }}</p>
     </div>
     <div class="cta-actions">
-      <a class="btn btn-primary" href="{{ "firma" | relLangURL }}">{{ i18n "cta_button" }}</a>
-      <a class="btn btn-secondary" href="mailto:{{ .Site.Params.company.email }}">{{ .Site.Params.company.email }}</a>
+      <a class="btn btn-primary" href="mailto:{{ .Site.Params.company.email }}?{{ querify "subject" (i18n "cta_button") }}">{{ i18n "cta_button" }}</a>
+      <a class="btn btn-secondary" href="tel:{{ .Site.Params.company.phoneHref }}">{{ .Site.Params.company.phone }}</a>
     </div>
   </div>
 </section>

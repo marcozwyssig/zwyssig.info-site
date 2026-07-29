@@ -3,7 +3,7 @@ title: "Lösungen"
 description: "System- und Software-Engineering – von Netzwerk und Infrastruktur bis zur massgeschneiderten Softwarelösung."
 ---
 
-Wir liefern Lösungen in zwei Welten – **System** und **Software** – nach derselben Methode und mit demselben Qualitätsanspruch.
+Ein Standardprodukt bildet Ihre Abläufe selten genau ab, und Ihre Infrastruktur muss einfach laufen. Wir liefern in zwei Welten – **System** und **Software** – nach derselben Methode und mit demselben Qualitätsanspruch: passgenau, verlässlich und wartbar.
 
 ## System-Engineering
 

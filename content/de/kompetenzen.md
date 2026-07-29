@@ -3,7 +3,7 @@ title: "Kompetenzen"
 description: "Übergreifende technische Kompetenzen: Automatisierung, Sicherheit und Business Continuity."
 ---
 
-Unsere übergreifenden, technischen Kompetenzen sorgen dafür, dass Lösungen **automatisiert, sicher und ausfallresistent** sind – über System und Software hinweg.
+Tempo darf nicht auf Kosten von Qualität, Sicherheit und Verfügbarkeit gehen. Unsere übergreifenden, technischen Kompetenzen sorgen dafür, dass Ihre Lösungen **automatisiert, sicher und ausfallresistent** sind – über System und Software hinweg.
 
 ## Automatisierung
 

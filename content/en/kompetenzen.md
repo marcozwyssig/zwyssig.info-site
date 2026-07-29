@@ -3,7 +3,7 @@ title: "Expertise"
 description: "Cross-cutting technical expertise: automation, security and business continuity."
 ---
 
-Our cross-cutting, technical expertise makes solutions **automated, secure and resilient** – across systems and software.
+Speed must not come at the expense of quality, security and availability. Our cross-cutting, technical expertise makes your solutions **automated, secure and resilient** – across systems and software.
 
 ## Automation
 

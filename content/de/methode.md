@@ -3,7 +3,7 @@ title: "Methode"
 description: "Unser durchgängiger Ablauf: Initialisierung, Konzeption, Realisierung und Einführung."
 ---
 
-Wir liefern nach einem durchgängigen, bewährten Ablauf – von der ersten Idee bis in den Betrieb. So bleiben Ziele, Termine und Kosten jederzeit im Blick.
+Projekte scheitern selten an der Technik, sondern am Vorgehen. Deshalb liefern wir nach einem durchgängigen, bewährten Ablauf – von der ersten Idee bis in den Betrieb – damit Ziele, Termine und Kosten jederzeit im Blick bleiben.
 
 ## Initialisierung
 
