@@ -22,3 +22,9 @@ other = "Colour theme: auto"
 other = "Colour theme: light"
 [theme_dark]
 other = "Colour theme: dark"
+[cta_heading]
+other = "Your next step"
+[cta_text]
+other = "Let's talk about your project – no obligation, and we'll get back to you quickly and personally."
+[cta_button]
+other = "Free initial consultation"

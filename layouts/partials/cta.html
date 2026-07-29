@@ -1,0 +1,12 @@
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div class="cta-copy">
+      <h2>{{ i18n "cta_heading" }}</h2>
+      <p>{{ i18n "cta_text" }}</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="{{ "firma" | relLangURL }}">{{ i18n "cta_button" }}</a>
+      <a class="btn btn-secondary" href="mailto:{{ .Site.Params.company.email }}">{{ .Site.Params.company.email }}</a>
+    </div>
+  </div>
+</section>

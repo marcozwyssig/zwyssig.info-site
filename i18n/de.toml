@@ -22,3 +22,9 @@ other = "Farbschema: automatisch"
 other = "Farbschema: hell"
 [theme_dark]
 other = "Farbschema: dunkel"
+[cta_heading]
+other = "Ihr nächster Schritt"
+[cta_text]
+other = "Lassen Sie uns unverbindlich über Ihr Vorhaben sprechen – wir melden uns rasch und persönlich."
+[cta_button]
+other = "Kostenloses Erstgespräch"

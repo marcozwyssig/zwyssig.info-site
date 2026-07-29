@@ -1,11 +1,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Params.hero.title }} · {{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Open Graph (social sharing) */}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Params.hero.title }}{{ else }}{{ .Title }}{{ end }}">
+{{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+<meta property="og:image" content="{{ "/images/logo.png" | absURL }}">
+
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <link rel="icon" href="/images/logo.png" type="image/png">
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+
+{{ if .IsHome }}{{ $c := .Site.Params.company }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": {{ $c.name | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "email": {{ $c.email | jsonify }},
+  "telephone": {{ $c.phone | jsonify }},
+  "image": {{ "/images/logo.png" | absURL | jsonify }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ $c.street | jsonify }},
+    "postalCode": "8196",
+    "addressLocality": "Wil ZH",
+    "addressCountry": "CH"
+  },
+  "areaServed": "CH",
+  "description": {{ .Description | jsonify }}
+}
+</script>
 {{ end }}

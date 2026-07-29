@@ -2,14 +2,15 @@
 <section class="hero">
   <div class="wrap">
     <h1>{{ .Params.hero.title }}</h1>
-    <p class="hero-sub">{{ .Params.hero.tagline }}</p>
-    <a class="btn btn-primary" href="{{ "/firma/" | relLangURL }}">{{ i18n "cta_contact" }}</a>
+    {{ with .Params.hero.positioning }}<p class="hero-sub">{{ . }}</p>{{ end }}
+    <a class="btn btn-primary" href="{{ "/firma/" | relLangURL }}">{{ i18n "cta_button" }}</a>
   </div>
 </section>
 
 <section class="pillars-section">
   <div class="wrap">
     {{ with .Params.accelHeading }}<h2>{{ . }}</h2>{{ end }}
+    {{ with .Params.hero.tagline }}<p class="lede accel-lede">{{ . }}</p>{{ end }}
     <div class="pillars">
       {{ range .Params.accelerator }}
       <div class="card card--static">
@@ -31,4 +32,6 @@
     </div>
   </div>
 </section>
+
+{{ partial "cta.html" . }}
 {{ end }}

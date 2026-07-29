@@ -1,7 +1,9 @@
 ---
 title: "Home"
+description: "Zwyssig Informatik GmbH – your partner for system and software engineering: network, infrastructure and software development with automation, security and business continuity."
 hero:
   title: "Your partner for system and software engineering"
+  positioning: "For companies and development teams that want to deliver system and software solutions faster, more cost-effectively and on target."
   tagline: "AI sets the pace, models and automation ensure consistency, experience shows the direction."
 accelHeading: "Your edge"
 accelerator:

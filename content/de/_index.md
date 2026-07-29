@@ -1,7 +1,9 @@
 ---
 title: "Home"
+description: "Zwyssig Informatik GmbH – Ihr Partner für System- und Software-Engineering: Netzwerk, Infrastruktur und Softwareentwicklung mit Automatisierung, Sicherheit und Business Continuity."
 hero:
   title: "Ihr Partner für System- und Software-Engineering"
+  positioning: "Für Unternehmen und Entwicklungsteams, die System- und Software-Lösungen schneller, wirtschaftlicher und zielsicher umsetzen wollen."
   tagline: "KI gibt das Tempo, Modelle und Automatisierung die Konsistenz, Erfahrung die Richtung."
 accelHeading: "Ihr Vorsprung"
 accelerator:
