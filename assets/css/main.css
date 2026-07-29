@@ -441,6 +441,7 @@ small, .meta{ color:var(--color-muted); font-size:.875rem; }
 .cta-copy h2{ margin-bottom:var(--space-2); }
 .cta-copy p{ color:var(--color-muted); max-width:46ch; margin:0; }
 .cta-actions{ display:flex; flex-wrap:wrap; gap:var(--space-3); align-items:center; }
+.footer-slogan{ font-style:italic; }
 
 /* ---- 8d. Contact card ----------------------------------------------------------- */
 .contact-card{

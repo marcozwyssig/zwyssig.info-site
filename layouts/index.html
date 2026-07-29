@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section class="hero">
   <div class="wrap">
+    {{ with .Site.Params.slogan }}<p class="eyebrow">{{ . }}</p>{{ end }}
     <h1>{{ .Params.hero.title }}</h1>
     {{ with .Params.hero.positioning }}<p class="hero-sub">{{ . }}</p>{{ end }}
     <a class="btn btn-primary" href="{{ "/firma/" | relLangURL }}">{{ i18n "cta_button" }}</a>

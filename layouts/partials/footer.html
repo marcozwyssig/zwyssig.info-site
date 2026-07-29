@@ -1,6 +1,6 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>&copy; {{ now.Year }} {{ .Site.Params.company.name }}</p>
+    <p>&copy; {{ now.Year }} {{ .Site.Params.company.name }}{{ with .Site.Params.slogan }} · <span class="footer-slogan">{{ . }}</span>{{ end }}</p>
     <p><a href="{{ "/impressum/" | relLangURL }}">{{ i18n "impressum" }}</a></p>
   </div>
 </footer>
