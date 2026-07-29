@@ -32,3 +32,7 @@ We share our knowledge – as training and coaching for your team, so that metho
 - **Test automation** – apply unit, integration and UI tests effectively.
 - **Software architecture** – design and document architectures (UML, arc42).
 - **Agile methods & engineering practices** – develop more productively and with greater satisfaction.
+
+## Always in concert
+
+Whichever service you choose, we apply it to your domain – **[systems or software]({{< relref "loesungen.md" >}})** – with a focus on your topics **[automation, security and business continuity]({{< relref "kompetenzen.md" >}})** – delivered by our proven **[method]({{< relref "methode.md" >}})**.

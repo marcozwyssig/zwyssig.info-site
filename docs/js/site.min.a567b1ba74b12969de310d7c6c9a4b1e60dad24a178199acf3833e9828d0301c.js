@@ -1,1 +1,0 @@
-const btn=document.querySelector(".nav-toggle"),nav=document.getElementById("site-nav");btn&&nav&&btn.addEventListener("click",()=>{const e=nav.classList.toggle("open");btn.setAttribute("aria-expanded",String(e))})

@@ -39,8 +39,11 @@
   --shadow-md:0 8px 24px rgba(20,28,46,.10);
 }
 
+/* Dark palette. Applied automatically by the system setting (unless the visitor
+   forced light), and manually via [data-theme="dark"]. Duplicated so both the
+   system-preference path and the manual-override path stay independent. */
 @media (prefers-color-scheme:dark){
-  :root{
+  :root:not([data-theme="light"]){
     --color-bg:#0f141c;
     --color-fg:#e6eaf2;
     --color-muted:#9aa4b2;
@@ -52,6 +55,18 @@
     --shadow-sm:0 1px 2px rgba(0,0,0,.35), 0 1px 1px rgba(0,0,0,.2);
     --shadow-md:0 8px 24px rgba(0,0,0,.45);
   }
+}
+:root[data-theme="dark"]{
+  --color-bg:#0f141c;
+  --color-fg:#e6eaf2;
+  --color-muted:#9aa4b2;
+  --color-accent:#6d8bff;
+  --color-accent-strong:#8ba1ff;
+  --color-accent-contrast:#0f141c;
+  --color-surface:#161d28;
+  --color-border:#262f3e;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.35), 0 1px 1px rgba(0,0,0,.2);
+  --shadow-md:0 8px 24px rgba(0,0,0,.45);
 }
 
 /* ---- 2. Reset & base ------------------------------------------------------ */
@@ -130,9 +145,30 @@ small, .meta{ color:var(--color-muted); font-size:.875rem; }
 }
 .brand img{ height:40px; width:auto; }
 /* Dark mode: the logo wordmark is near-black, so lift it to light while
-   keeping the red burst reddish (invert flips lightness; hue-rotate restores hue). */
+   keeping the red burst reddish (invert flips lightness; hue-rotate restores hue).
+   Applies for system-dark (unless forced light) and manual dark. */
 @media (prefers-color-scheme:dark){
-  .brand img{ filter:invert(1) hue-rotate(180deg); }
+  :root:not([data-theme="light"]) .brand img{ filter:invert(1) hue-rotate(180deg); }
+}
+:root[data-theme="dark"] .brand img{ filter:invert(1) hue-rotate(180deg); }
+:root[data-theme="light"] .brand img{ filter:none; }
+
+/* Theme toggle (auto / light / dark) */
+.theme-toggle{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:2.25rem; height:2.25rem;
+  border:1px solid var(--color-border);
+  border-radius:999px;
+  background:transparent;
+  color:var(--color-fg);
+  font-size:1rem; line-height:1;
+  cursor:pointer;
+  transition:border-color var(--dur) var(--ease), color var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.theme-toggle:hover, .theme-toggle:focus-visible{
+  border-color:var(--color-accent);
+  color:var(--color-accent);
+  background:var(--color-surface);
 }
 
 .site-nav ul{

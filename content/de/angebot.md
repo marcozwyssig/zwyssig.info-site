@@ -32,3 +32,7 @@ Wir geben unser Wissen weiter – als Schulung und Coaching für Ihr Team, damit
 - **Testautomatisierung** – Unit-, Integrations- und UI-Tests wirkungsvoll einsetzen.
 - **Softwarearchitektur** – Architekturen entwerfen und dokumentieren (UML, arc42).
 - **Agile Methoden & Engineering-Praktiken** – produktiver und zufriedener entwickeln.
+
+## Immer im Zusammenspiel
+
+Jede Leistungsart bringen wir gezielt in Ihren Bereich ein – **[System oder Software]({{< relref "loesungen.md" >}})** – mit Fokus auf Ihre Themen **[Automatisierung, Sicherheit und Business Continuity]({{< relref "kompetenzen.md" >}})** – geliefert nach unserer bewährten **[Methode]({{< relref "methode.md" >}})**.

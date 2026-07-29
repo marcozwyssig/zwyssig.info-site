@@ -16,3 +16,9 @@ other = "Partner"
 other = "Über uns"
 [read_more]
 other = "Weiterlesen"
+[theme_auto]
+other = "Farbschema: automatisch"
+[theme_light]
+other = "Farbschema: hell"
+[theme_dark]
+other = "Farbschema: dunkel"

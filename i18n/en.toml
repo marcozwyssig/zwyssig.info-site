@@ -16,3 +16,9 @@ other = "Partner"
 other = "About us"
 [read_more]
 other = "Read more"
+[theme_auto]
+other = "Colour theme: auto"
+[theme_light]
+other = "Colour theme: light"
+[theme_dark]
+other = "Colour theme: dark"

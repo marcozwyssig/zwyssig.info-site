@@ -11,6 +11,11 @@
         {{ end }}
       </ul>
     </nav>
+    <button class="theme-toggle" type="button"
+            data-label-auto="{{ i18n "theme_auto" }}"
+            data-label-light="{{ i18n "theme_light" }}"
+            data-label-dark="{{ i18n "theme_dark" }}"
+            aria-label="{{ i18n "theme_auto" }}">◐</button>
     {{ partial "language-switcher.html" . }}
   </div>
 </header>
