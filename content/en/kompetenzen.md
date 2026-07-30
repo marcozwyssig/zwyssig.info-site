@@ -1,5 +1,5 @@
 ---
-title: "Core competencies"
+title: "Expertise"
 description: "Cross-cutting technical expertise: automation, security and business continuity."
 ---
 

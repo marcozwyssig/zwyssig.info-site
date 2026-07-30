@@ -1,5 +1,5 @@
 ---
-title: "Kern-Kompetenzen"
+title: "Kompetenzen"
 description: "Übergreifende technische Kompetenzen: Automatisierung, Sicherheit und Business Continuity."
 ---
 

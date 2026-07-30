@@ -21,6 +21,6 @@ sections:
     link: "/loesungen/"
   - title: "Methode"
     link: "/methode/"
-  - title: "Kern-Kompetenzen"
+  - title: "Kompetenzen"
     link: "/kompetenzen/"
 ---

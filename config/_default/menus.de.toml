@@ -15,7 +15,7 @@ name = "Methode"
 pageRef = "/methode/"
 weight = 4
 [[main]]
-name = "Kern-Kompetenzen"
+name = "Kompetenzen"
 pageRef = "/kompetenzen/"
 weight = 5
 [[main]]
