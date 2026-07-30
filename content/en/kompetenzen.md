@@ -15,7 +15,7 @@ Consistency and maintainability come from automation – across the entire lifec
 - Infrastructure as Code (Ansible, Terraform, Puppet)
 - PowerShell and scripting
 
-Complemented by proven engineering practices such as Clean Code and arc42 architecture.
+Complemented by proven engineering practices such as Clean Code.
 
 ## Security
 
@@ -43,3 +43,12 @@ Legacy systems that have grown over time are expensive to run and hard to change
 - Incremental migration instead of a risky full switch-over
 - Automation of operations and deployment (IaC, CI/CD)
 - Lower operating costs and better maintainability
+
+## Architecture documentation
+
+Without clearly documented architecture, every further development becomes a risk. We describe and document software and system architectures in a structured, comprehensible way – for example with **arc42**:
+
+- Complete, structured architecture documentation (arc42)
+- Traceable decisions and quality goals
+- A shared language for team and stakeholders
+- A reliable basis for further development and maintenance

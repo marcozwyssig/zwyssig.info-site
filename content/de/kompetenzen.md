@@ -15,7 +15,7 @@ Konsistenz und Wartbarkeit entstehen durch Automatisierung – über den ganzen 
 - Infrastructure as Code (Ansible, Terraform, Puppet)
 - PowerShell und Skripting
 
-Ergänzt durch bewährte Engineering-Praktiken wie Clean Code und Architektur nach arc42.
+Ergänzt durch bewährte Engineering-Praktiken wie Clean Code.
 
 ## Sicherheit
 
@@ -43,3 +43,12 @@ Gewachsene Alt-Systeme sind teuer im Betrieb und schwer zu ändern. Wir überfü
 - Schrittweise Migration statt riskanter Komplettumstellung
 - Automatisierung von Betrieb und Bereitstellung (IaC, CI/CD)
 - Tiefere Betriebskosten und bessere Wartbarkeit
+
+## Architektur-Beschreibung
+
+Ohne verständlich dokumentierte Architektur wird jede Weiterentwicklung zum Risiko. Wir beschreiben und dokumentieren Software- und Systemarchitekturen strukturiert und nachvollziehbar – etwa nach **arc42**:
+
+- Vollständige, strukturierte Architekturdokumentation (arc42)
+- Nachvollziehbare Entscheidungen und Qualitätsziele
+- Gemeinsame Sprache für Team und Stakeholder
+- Verlässliche Grundlage für Weiterentwicklung und Wartung
