@@ -1,5 +1,5 @@
 ---
-title: "Kompetenzen"
+title: "Kern-Kompetenzen"
 description: "Übergreifende technische Kompetenzen: Automatisierung, Sicherheit und Business Continuity."
 ---
 
@@ -44,7 +44,7 @@ Gewachsene Alt-Systeme sind teuer im Betrieb und schwer zu ändern. Wir überfü
 - Automatisierung von Betrieb und Bereitstellung (IaC, CI/CD)
 - Tiefere Betriebskosten und bessere Wartbarkeit
 
-## Architektur-Beschreibung
+## Architektur
 
 Ohne verständlich dokumentierte Architektur wird jede Weiterentwicklung zum Risiko. Wir beschreiben und dokumentieren Software- und Systemarchitekturen strukturiert und nachvollziehbar – etwa nach **arc42**:
 

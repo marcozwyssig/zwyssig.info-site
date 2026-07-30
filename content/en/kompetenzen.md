@@ -1,5 +1,5 @@
 ---
-title: "Expertise"
+title: "Core competencies"
 description: "Cross-cutting technical expertise: automation, security and business continuity."
 ---
 
@@ -44,7 +44,7 @@ Legacy systems that have grown over time are expensive to run and hard to change
 - Automation of operations and deployment (IaC, CI/CD)
 - Lower operating costs and better maintainability
 
-## Architecture documentation
+## Architecture
 
 Without clearly documented architecture, every further development becomes a risk. We describe and document software and system architectures in a structured, comprehensible way – for example with **arc42**:
 
